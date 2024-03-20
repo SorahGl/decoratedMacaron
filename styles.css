@@ -1,0 +1,143 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* HEADER STYLES */
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+}
+nav h1 {
+    font-family: "Sacramento", cursive;
+    font-weight: 550;
+    font-size: 3.5em;
+    margin: 0;
+}
+nav ul {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+nav a {
+    padding: 0 5px;
+    color: black;
+}
+video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* CARD STYLES*/
+.card {
+    border: #333 solid 1px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 300px;
+    height: 230px;
+    border-radius: 5px;
+}
+.cardDiv {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+    font-weight: 450;
+}
+#deliveryOption {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer li {
+    list-style: none;
+    padding: 3px;
+}
+#emailSignUp {
+    justify-content: center;
+    align-items: center;
+}
+#credits {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        padding: 10px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    nav h1 {
+        margin-bottom: 20px;
+    }
+    nav div {
+        display: none;
+    }
+    body {
+        margin-top: 180px;
+    }
+    
+}
+@media screen and (max-width: 426px){
+    img {
+        width: 150px;
+        height: auto;
+    }
+    .card {
+        margin: 7px;
+    }
+    nav h1 {
+        font-size: 2.5em;
+    
+    }
+}
+@media screen and (min-width: 1122px) {
+    video {
+        width: 1100px;
+        height: auto;
+        align-self: center;
+    }
+    #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222222;
+    }
+}
