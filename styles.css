@@ -2,6 +2,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+h2 {
+    text-align: center;
+}
+hr {
+    margin-bottom: 20px;
+}
 
 /* HEADER STYLES */
 nav {
@@ -39,13 +45,14 @@ video {
 }
 /* CARD STYLES*/
 .card {
-    border: #333 solid 1px;
+    /*border: #333 solid 1px;*/
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 img {
     width: 300px;
@@ -60,14 +67,25 @@ img {
 }
 .card h2 {
     font-family: 'Sacramento', cursive;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 450;
+    margin-top: 8px;
+    margin-bottom: 4px;
 }
-#deliveryOption {
-    display: flex;
-    flex-direction: column;
+.card p {
+    margin-top: 2px;
 
 }
+
+/* ORDER SECTION STYLES */
+#orderDiv {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.orderList li {
+    list-style: none;
+}
+
 
 /* FOOTER STYLES */
 footer {
@@ -76,15 +94,24 @@ footer {
     position: relative;
     bottom: 0px;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
     color: white;
     background-color: rgb(65, 65, 65);
     box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
 }
+#footerTop {
+    display: flex;
+    justify-content: space-around;
+}
 footer li {
     list-style: none;
     padding: 3px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }
 #emailSignUp {
     justify-content: center;
@@ -114,6 +141,7 @@ footer li {
         margin-top: 180px;
     }
     
+    
 }
 @media screen and (max-width: 426px){
     img {
@@ -125,6 +153,11 @@ footer li {
     }
     nav h1 {
         font-size: 2.5em;
+    
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
     
     }
 }
