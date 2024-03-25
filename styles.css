@@ -1,12 +1,17 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+    color: #222222;
 }
 h2 {
     text-align: center;
 }
-hr {
-    margin-bottom: 20px;
+.dividerTitle {
+    width: 100%;
+    border-top: 4px solid #222222;
+    border-bottom: 4px solid #222222;
+    padding: 5px;
+    margin-top: 100px;
 }
 
 /* HEADER STYLES */
@@ -80,7 +85,7 @@ img {
 /* ORDER SECTION STYLES */
 #orderDiv {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 .orderList li {
     list-style: none;
