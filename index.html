@@ -8,7 +8,13 @@
         content="A pastry shop specializing in handcrafted, custom decorated, gluten free macarons along with other elegant pastries.">
     <meta name="keywords" content="macarons, custom decorated macarons, elegant pastries, gluten free">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#b15dba">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://kit.fontawesome.com/53de96a3b5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +26,10 @@
         <div><a href="/index.html">logo logo</a></div>
         <h1>The Decorated Macaron</h1>
         <ul>
-            <li><a href="/">about</a></li>
-            <li><a href="#products">products</a></li>
-            <li><a href="#order">order</a></li>
+            <li><a href="#">about</a></li>
+            <li id="productHover">products</li>
+                
+            <li><a href="#orderDiv">order</a></li>
         </ul>
     </nav>
 </header>
@@ -116,8 +123,9 @@
             <h2>Chocolate-Cappacino</h2>
         </div>
     </div>
+    
+    <h2 class="dividerTitle">Order</h2>
     <div id="orderDiv">
-        <h2 class="dividerTitle">Order</h2>
         <p>For all orders and inquiries, please contact Sorah Gleich</p>
         <ul class="orderList">
             <li><i class="fa-solid fa-envelope" style="color: #4f4f4f;"></i> Email: sg@thedecoratedmacaron.com</li>
