@@ -1,11 +1,15 @@
-let emailList = [];
-const emailInput = document.getElementById('email');
-const submitButton = document.getElementById('submit');
 
-const handleSubmit = () => {
-    emailList.push(emailInput.value);
-    emailInput.value = '';
-    console.log(emailList);
-    }
+// Add event listener to product hover
+const productHover = document.getElementById('productHover');
+const productMenu = document.getElementById('dropDown');
 
-submitButton.addEventListener('click', handleSubmit);
+const handleHover = () => {
+    productMenu.style.display = 'block';
+}
+const handleLeave = () => {
+    productMenu.style.display = 'none';
+}
+
+productHover.addEventListener('mouseover', handleHover);
+productHover.addEventListener('mouseleave', handleLeave);
+

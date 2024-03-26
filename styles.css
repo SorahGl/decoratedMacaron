@@ -43,6 +43,13 @@ nav a {
     padding: 0 5px;
     color: black;
 }
+#dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
 video {
     width: 100%;
     height: auto;
@@ -86,6 +93,7 @@ img {
 #orderDiv {
     text-align: center;
     margin-bottom: 100px;
+    margin-top: 65px;
 }
 .orderList li {
     list-style: none;
