@@ -1,6 +1,8 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+}
+body {
     color: #222222;
 }
 h2 {
@@ -86,7 +88,9 @@ img {
 }
 .card p {
     margin-top: 2px;
-
+}
+.size {
+    font-size: 0.85em;
 }
 
 /* ORDER SECTION STYLES */

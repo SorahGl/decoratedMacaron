@@ -13,3 +13,12 @@ const handleLeave = () => {
 productHover.addEventListener('mouseover', handleHover);
 productHover.addEventListener('mouseleave', handleLeave);
 
+// Add event listener to email submit
+const emailInput = document.getElementById('email');
+const submitButton = document.getElementById('submit');
+
+const handleSubmit = () => {
+    emailInput.value = '';
+    }
+
+submitButton.addEventListener('click', handleSubmit);
