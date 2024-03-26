@@ -1,0 +1,178 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    color: #222222;
+}
+
+/* HEADER STYLES */
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px 0;
+    z-index: 2;
+}
+nav h1 {
+    font-family: "Sacramento", cursive;
+    font-weight: 550;
+    font-size: 3.5em;
+    margin: 0;
+}
+nav ul {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+nav a {
+    padding: 0 5px;
+    color: black;
+}
+#dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+/* BODY STYLES */
+#pictures {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#aboutSection {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    width: 75%;
+    padding: 20px;
+    border-radius: 7%;
+    font-weight: 545;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    background-color: #ffffffe3;
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#footerTop {
+    display: flex;
+    justify-content: space-around;
+}
+footer li {
+    list-style: none;
+    padding: 3px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+#emailSignUp {
+    justify-content: center;
+    align-items: center;
+}
+#credits {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        padding: 10px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    nav h1 {
+        margin-bottom: 20px;
+    }
+    nav div {
+        display: none;
+    }
+    body {
+        margin-top: 180px;
+    }
+}
+@media screen and (max-width: 646px){
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 496px){
+    img {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+@media screen and (max-width: 487px){
+    nav h1 {
+        font-size: 2.5em;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    
+    }
+}
+@media screen and (max-width: 348px) {
+
+    img {
+        width: 75px;
+        height: 75px;
+    }
+
+}
+@media screen and (min-width: 1122px) {
+    #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222222;
+    }
+}
